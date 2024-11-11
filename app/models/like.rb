@@ -16,6 +16,8 @@ class Like < ApplicationRecord
     :uniqueness => { :scope => [:fan_id] }
   })
 
+  # Association accessor methods to define:
+
   ## Direct associations
 
   # Like#fan: returns a row from the users table associated to this like by the fan_id column

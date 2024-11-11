@@ -17,6 +17,8 @@ class FollowRequest < ApplicationRecord
     :uniqueness => { :scope => [:sender_id] }
   })
 
+  # Association accessor methods to define:
+
   ## Direct associations:
 
   # FollowRequest#sender: returns a row from the users table associated to this follow request by the sender_id column

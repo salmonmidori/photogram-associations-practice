@@ -17,6 +17,8 @@ class User < ApplicationRecord
     :uniqueness => { :case_sensitive => false },
   })
   
+  # Association accessor methods to define:
+
   ## Direct associations
 
   # User#comments: returns rows from the comments table associated to this user by the author_id column
